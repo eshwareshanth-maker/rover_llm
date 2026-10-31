@@ -1,3 +1,6 @@
+#author: Eshanth Eshwar M
+#email: eshwareshanth@gmial.com
+
 import json, torch
 from common import VOCAB_SIZE, CFG, NL_ID, encode, decode
 from model import SmallLM
@@ -14,10 +17,10 @@ def text_to_plan(model, text, block):
     out = []
     for _ in range(block - len(ids)):
         idx = torch.tensor([ids + out])
-        nxt = model(idx)[0][0, -1].argmax().item()   # greedy: same input, same output
+        nxt = model(idx)[0][0, -1].argmax().item()   
         if nxt == NL_ID:
             return decode(out)
         if nxt == 0:
             break
         out.append(nxt)
-    return ''   # no clean ending -> treated as 'not understood'
+    return ''   

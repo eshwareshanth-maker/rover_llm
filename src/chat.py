@@ -1,3 +1,6 @@
+#author: Eshanth Eshwar M
+#email: eshwareshanth@gmial.com
+
 import math, re
 from common import parse_plan, within_limits
 from planner import load_model, text_to_plan
@@ -31,7 +34,7 @@ def start_pose(state):
 
 def main():
     model, block = load_model()
-    state = {'pose': None, 'last': None}   # chat memory lives here, not inside the model
+    state = {'pose': None, 'last': None}   
     print('Rover command assistant. Try: go straight 4 m then 6 m left')
     print('Other inputs: repeat | pose | quit')
     while True:

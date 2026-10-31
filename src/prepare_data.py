@@ -1,3 +1,6 @@
+#author: Eshanth Eshwar M
+#email: eshwareshanth@gmial.com
+
 import json, torch
 from common import encode, TAB, NL, TAB_ID
 

@@ -1,3 +1,6 @@
+#author: Eshanth Eshwar M
+#email: eshwareshanth@gmial.com
+
 import json, math, os, time, torch
 from common import VOCAB_SIZE, CFG
 from model import SmallLM

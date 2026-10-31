@@ -1,3 +1,6 @@
+#author: Eshanth Eshwar M
+#email: eshwareshanth@gmial.com
+
 import json
 from planner import load_model, text_to_plan
 

@@ -1,3 +1,6 @@
+#author: Eshanth Eshwar M
+#email: eshwareshanth@gmial.com
+
 import math
 
 LIN_SPEED = 0.2      # m/s   - edit to match your rover

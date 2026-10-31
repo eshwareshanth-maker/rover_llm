@@ -1,3 +1,6 @@
+#author: Eshanth Eshwar M
+#email: eshwareshanth@gmial.com
+
 import re
 
 TAB, NL = chr(9), chr(10)
@@ -17,7 +20,7 @@ def decode(ids):
 PART_RE = re.compile(r'^(MOVE [FB] [0-9]+([.][0-9]+)?|TURN [LR] [0-9]+([.][0-9]+)?(deg|s))$')
 
 def parse_plan(text):
-    # 'MOVE F 4; TURN L 90deg' -> list of steps, or None if anything is invalid
+    
     steps = []
     for part in text.split(';'):
         part = part.strip()

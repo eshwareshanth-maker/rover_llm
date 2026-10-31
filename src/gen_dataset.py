@@ -1,3 +1,6 @@
+#author: Eshanth Eshwar M
+#email: eshwareshanth@gmial.com
+
 import json, random
 
 SIDES = {'L': ['left', 'anticlockwise', 'counterclockwise', 'counter clockwise', 'ccw'],
@@ -25,7 +28,7 @@ def move_step():
     d = 'F' if fwd else 'B'
     return verb + link + n + random.choice(UNITS), ['MOVE ' + d + ' ' + n]
 
-def side_step():   # '6 m left' means: turn left 90 deg, then drive 6 m
+def side_step():   
     s, n = random.choice('LR'), dist()
     word = 'left' if s == 'L' else 'right'
     text = n + random.choice(UNITS) + ' ' + random.choice(['', 'to the ']) + word
